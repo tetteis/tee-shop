@@ -6,7 +6,7 @@ import About from "./About.jsx";
 import Products from "./Products.jsx";
 import ProductDetails from "./ProductDetails.jsx";
 import Cart from "./Cart.jsx";
-import Success from "./Success.jsx";
+import Error404 from "./Error404.jsx";
 
 function App() {
   const [cart, setCart] = useState(function () {
@@ -81,7 +81,7 @@ function App() {
             element={<ProductDetails onProductAdd={handleProductAdd} />}
           ></Route>
           <Route path="/cart" element={<Cart cart={cart} />}></Route>
-          <Route path="/success" element={<Success />}></Route>
+          <Route path="*" element={<Error404 />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

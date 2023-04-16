@@ -28,7 +28,7 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "https://tee-shop-one.vercel.app/success",
+          successUrl: "https://tee-shop-one.vercel.app/",
           cancelUrl: "https://tee-shop-one.vercel.app",
           customerEmail: email,
         })

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-export default function Success() {
+export default function Error404() {
   return (
     <div className="home-layout">
       <div>
-        <h1>Payment Successfully Received ✨</h1>
-        <Link to="/products">Browse more products</Link> or{" "}
+        <h1>Page Not Found. 😥</h1>
+        <Link to="/products">Browse our products</Link> or{" "}
         <Link to="/">go back </Link> to homepage.
       </div>
     </div>
