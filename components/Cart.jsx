@@ -3,9 +3,9 @@ import { loadStripe } from "@stripe/stripe-js";
 import Input from "./Input.jsx";
 import Button from "./Button.jsx";
 
-// TODO: Replace with your own publishable key as an environment variable.
+// TODO: Replace with your own publishable key.
 const stripeLoadedPromise = loadStripe(
-  `${process.env.VITE_REACT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`
+  "pk_test_51HsqkCGuhXEITAut89vmc4jtjYd7XPs8hWfo2XPef15MFqI8rCFc8NqQU9WutlUBsd8kmNqHBeEmSrdMMpeEEyfT00KzeVdate"
 );
 
 export default function Cart({ cart }) {
