@@ -2,7 +2,7 @@
 
 `Vite` and `React` were used to bootstrap this project, which includes integration with `Stripe`.
 
-We fetch the data with Next.JS SWR hook.
+We fetch data with the [SWR](https://swr.vercel.app/docs/getting-started) hook.
 
 ## Getting Started
 
