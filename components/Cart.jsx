@@ -5,7 +5,7 @@ import Button from "./Button.jsx";
 
 // TODO: Replace with your own publishable key as an environment variable.
 const stripeLoadedPromise = loadStripe(
-  `${import.meta.env.VITE_REACT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`
+  `${process.env.VITE_REACT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`
 );
 
 export default function Cart({ cart }) {
