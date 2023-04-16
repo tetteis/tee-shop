@@ -28,8 +28,8 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "http://localhost:5173/success",
-          cancelUrl: "https://tetteis.com",
+          successUrl: "https://tee-shop-one.vercel.app/success",
+          cancelUrl: "https://tee-shop-one.vercel.app",
           customerEmail: email,
         })
         .then((response) => {
